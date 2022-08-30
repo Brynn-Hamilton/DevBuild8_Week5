@@ -13,14 +13,16 @@ while (KeepGoing)
 
     Console.WriteLine($"The number {input} prime is {result}");
 
-    Console.Write("Would you like to go again? Y/N ");
+    Console.Write("Do you want to find another prime number? y/n ");
     string choice = Console.ReadLine().ToLower();
     if (choice == "yes" || choice == "y")
     {
+        Console.WriteLine();
         KeepGoing = true;
     }
     else if (choice == "no" || choice == "n")
     {
+        Console.WriteLine();
         Console.WriteLine("Bye");
         KeepGoing = false;
     }
